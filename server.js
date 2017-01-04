@@ -61,7 +61,7 @@ app.post('/contact', upload.single('file'), function (req, res) {
     attachmentContent = '';
   }
   //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
-  smtpTrans = nodemailer.createTransport('smtps://krgrfamily@gmail.com:bobandjeans@smtp.gmail.com');
+  // smtpTrans = nodemailer.createTransport('smtps://krgrfamily@gmail.com:bobandjeans@smtp.gmail.com');
   //Mail options
   mailOptions = {
       from: req.body.name + ' <' + 'krgrfamily@gmail.com' + '>', //grab form data from the request body object
@@ -101,7 +101,7 @@ app.post('/submit', upload.single('file'), function (req, res) {
     attachmentContent = '';
   }
   //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
-  smtpTrans = nodemailer.createTransport('smtps://krgrfamily@gmail.com:bobandjeans@smtp.gmail.com');
+  // smtpTrans = nodemailer.createTransport('smtps://krgrfamily@gmail.com:bobandjeans@smtp.gmail.com');
   //Mail options
   mailOptions = {
       from: req.body.email + ' <' + 'krgrfamily@gmail.com' + '>', //grab form data from the request body object
